@@ -7,71 +7,105 @@
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-<header>
-  <img class="logo" src="images/placeholder-circle.svg" alt="">
-    <nav>
-      <input type="checkbox" class="nav-check" id="nav-check">
-      <label class="nav-label" for="nav-check"><img class="toggle" src="images/nav-icon.svg" alt=""></label>
-      <ul class="nav">
-        <li><a href="#vegan">Vegan Options</a></li>
-        <li><a href="#vegetarian"></a>Vegetarian</li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#chefs">Chefs</a></li>
-      </ul>
-    </nav>
-    <section class="banner">
-      <h1><img class="img-flex" src="images/placeholder-1by1.svg" alt=""> <img class="second-img" src="images/placeholder-3by1.svg" alt=""><img class="third-img" src="images/placeholder-3by2.svg" alt=""></h1>
-      <div class="text">
-        <h2>Enjoy the foods you thought you couldn't!</h2>
-        <p>Foods to meet your dietary needs</p>
-        <div>
-          <a class="btn btn-subtle" href="#pp">View Options</a>
-        </div>
+  <header>
+      <div class="masthead">
+        <h1>The Fix</h1>
+        <img class="logo" src="images/placeholder-circle.svg" alt="">
       </div>
-    </section>
-  </header>
-  <section class="my-cards">
-    <ul class="cards">
-      <li class="card">
-        <a href="#chefs">
-          <div class="card-img">
-            <img src="images/placeholder-hex.svg" alt="">
+      <nav>
+        <input type="checkbox" class="nav-check" id="nav-check">
+        <label class="nav-label" for="nav-check"><img src="images/nav-icon.svg" alt="Open Navigation"></label>
+        <ul class="nav">
+          <li><a href="#vegetarian">Vegetarian Options</a></li>
+          <li><a href="#vegan">Vegan Options</a></li>
+          <li><a href="#chef">Meet the Chef</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner">
+        <img class="img-flex" src="images/placeholder-16by9.svg" alt="">
+        <div class="content">
+          <h2>Enjoy The Foods You Thought You Couldn't</h2>
+          <p>Menu Additions to Suit Everyones Dietary Needs</p>
+          <div>
+            <a class="btn" href="#options">View New Menu</a>
           </div>
-          <div class="card-body">
-            <h2>Meet our Chef</h2>
+        </div>
+      </section>
+
+  <article class="link-card" id="options">
+        <a href="#vegetarian">
+          <img class="img-flex" src="images/placeholder-3by2.svg" alt="">
+          <div class="content">
+            <h2>Vegetarian Options</h2>
           </div>
         </a>
-      </li>
-      <li class="card">
-        <a href="#contact">
-          <div class="card-img">
-            <img src="images/placeholder-hex.svg" alt="">
-          </div>
-          <div class="card-body">
-            <h2>Contact us</h2>
-          </div>
-        </a>
-      </li>
-      <li class="card">
-        <a href="#chefs">
-          <div class="card-img">
-            <img src="images/placeholder-hex.svg" alt="">
-          </div>
-          <div class="card-body">
+      </article>
+
+      <article class="link-card">
+        <a href="#vegan">
+          <img class="img-flex" src="images/placeholder-3by2.svg" alt="">
+          <div class="content">
             <h2>Vegan Options</h2>
           </div>
         </a>
-      </li>
-    </li>
-    <li class="card">
-      <a href="#veg">
-        <div class="card-img">
-          <img src="images/placeholder-hex.svg" alt="">
+      </article>
+
+      <article class="link-card">
+        <a href="#chef">
+          <img class="img-flex" src="images/placeholder-3by2.svg" alt="">
+          <div class="content">
+            <h2>Meet the Chef</h2>
+          </div>
+        </a>
+      </article>
+
+      <article class="link-card">
+        <a href="#location">
+          <img class="img-flex" src="images/placeholder-3by2.svg" alt="">
+          <div class="content">
+            <h2>Our Location</h2>
+          </div>
+        </a>
+      </article>
+
+      <section class="section" id="vegetarian">
+        <h2>Vegetarian Options</h2>
+        <div class="food">
+          <img class="icon-food" src="images/placeholder-3by2.svg" alt="">
+          <p>Our new menu additons at The Fix allow people whos daily diet consists of only vegetarian meals to eat comfortably. The new menu includes a total of six vegatarian dishes! The new dishes are prepared specially by our famous vegetarian chef. These menu options have become very  popular since not many menus consist of dishes geared towards vegetarians. The new dishes have also became popular with or non-vegetarian costumers as well since they are so tasty!
+Come try them out!</p>
         </div>
-        <div class="card-body">
-          <h2>Vegatarian Options</h2>
+      </section>
+
+      <section class="section" id="vegan">
+        <h2>Vegan Options</h2>
+        <div class="food">
+          <img class="food-icon" src="images/placeholder-3by2.svg" alt="">
+          <p>We have made new accomadations to our menu to satisfy our costumers that are on a strict vegan diet.  We have added four meals to our menu that are strictly vegan meals. Although there are not many vegan costumers, the ones we get enjoy the meals a alot and we often see them on a daily basis, because you dint typically see vegan meals on many menus. If you are vegan or want to try our new vegan meals come dine at The Fix today!</p>
         </div>
-      </a>
-    </li>
-    </ul>
-  </section>
+      </section>
+
+      <section class="section" id="chef">
+        <h2>Meet the chef</h2>
+        <div class="food">
+          <img class="food-icon" src="images/placeholder-3by2.svg" alt="">
+          <p>Our head chef Heidi was hand picked out of many highly qualified chefs because not only did she study culunary in school but she is also a qualified dietition. She was picked because she brought many good dishes to us that fit a bunch of dietary needs and we realized it would be greatly appriecated by our customers and allow us to bring in a bigger variety of guests. All of the dishes geared to dietary needs were created by her, and every single one of them is a hit!</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="footer-links">
+        <li><a href="#vegetarian">Vegetarian Options</a></li>
+        <li><a href="#vegan">Vegan Options</a></li>
+        <li><a href="#chef">Meet the Chef</a></li>
+        <li><a href="#Location">Our Location</a></li>
+      </ul>
+      <small>&copy;Copyright The Fix 2016</small>
+    </footer>
+  </body>
+  </html>
