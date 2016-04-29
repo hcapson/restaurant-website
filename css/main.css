@@ -26,7 +26,10 @@ h1 {
   background-color: #555;
   color: white;
   font-size: 1.5rem;
-  padding: 2.4rem;
+  padding: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-top: .5rem;
 }
 
 .logo {
@@ -133,5 +136,173 @@ div {
 }
 
 .food-icon {
-  display:inline-block;
+  display:block;
+  max-width: 12em;
+  margin: auto;
+}
+
+article h2 {
+  color: black;
+}
+
+section p {
+  padding-left: .5rem;
+  text-align: left;
+}
+
+section h2 {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+section {
+  color: black;
+  background-color: white;
+}
+
+#chef {
+  overflow: hidden;
+}
+
+.chef-icon {
+  display: block;
+  margin: auto;
+  max-width: 12em;
+}
+
+section p {
+  margin: 0;
+}
+
+section h2 {
+  margin: 0;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+div h3, p {
+  text-align: center;
+}
+
+footer {
+  margin-top: 2em;
+  padding: 1rem;
+  clear: both;
+  background-color: #555;
+}
+
+footer ul {
+  margin-bottom: 1em;
+}
+
+footer a {
+  padding: 4px;
+  text-align: center;
+  background-color: #555;
+}
+
+small {
+  color:#f2f2f2;
+  text-align: center;
+  background-color: #555;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  section h2 {
+    padding-top: 4rem;
+    margin: 0;
+  }
+
+  .banner h2 {
+    font-size: 200%;
+  }
+
+  section p {
+    margin: 2rem;
+  }
+
+  .link-card:nth-child(1n) {
+    width: 50%;
+    float: left;
+    display: block;
+  }
+
+  .link-card:nth-child(2n) {
+    width: 50%;
+    float: left;
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  article .content {
+    font-size: .75rem;
+  }
+
+  .link-card:nth-child(1n) {
+    width: 25%;
+    float: left;
+    display: block;
+  }
+
+  .link-card:nth-child(2n) {
+    width: 25%;
+    float: left;
+    display: block;
+  }
+
+  .nav {
+     display: block;
+     background-color: #555;
+     text-align: center;
+   }
+
+   .nav-label {
+     display: none;
+   }
+
+   .nav a {
+     padding-left: 2rem;
+     padding-right: 2rem;
+    background-color: #555;
+   }
+
+   .nav li {
+     display: inline-block;
+   }
+
+   .nav a {
+     background-color: #555;
+     padding-left: 2rem;
+     padding-right: 2rem;
+   }
+
+   .nav a:hover {
+     background-color: black;
+     color: white;
+   }
+
+ }
+
+ @media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.7;
+  }
+
 }
