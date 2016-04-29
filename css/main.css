@@ -99,4 +99,9 @@ a {
 .btn {
   font-size: 1.5rem;
   display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: .5rem;
+  border-radius: 7px;
+  color: white;
 }
