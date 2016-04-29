@@ -4,6 +4,14 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font: normal 100%/1.3 "Questrial", sans-serif;
+}
 
 *, *::before, *::after {
   box-sizing: inherit;
@@ -19,79 +27,93 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.masthead {
-  position: absolute;
-  display: block;
-  height: 2rem;
-  background-color: #555;
-  color: white;
-  font-size: 1.5rem;
-  padding: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 3rem;
-  padding-top: .5rem;
-}
-
-.logo {
-  display: block;
-  position: absolute;
-  width: 35px;
-  float: left;
-  left: 3px;
-  top: 3px;
-}
-
-.nav a:hover {
-  color: white;
-  background-color: black
-}
-.btn:hover {
-  color: white;
-  background-color: black;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
+nav ol {
   list-style-type: none;
+  padding-left: 0;
+  text-align: right;
+  clear: both;
+  margin: 0;
 }
 
-.nav-check {
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding-right: .75em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.nav {
   display: none;
 }
 
-a {
-  background-color: #333;
-  color: white;
-  display: block;
-  text-decoration: none;
-  text-align: center;
-}
-
-.nav-label {
+.nav-check {
   position: absolute;
-  display: inline-block;
-  width: 35px;
-  top: 3px;
-  right:3px;
+  top: -3em;
 }
 
 .nav-check:checked ~ .nav {
   display: block;
 }
 
-.banner {
+.nav-label {
+  float: right;
+  margin: 1.3rem;
+  cursor: pointer;
+  width: 40px;
+  display: inline-block;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
   width: 100%;
-  max-height: 600px;
-  position: relative;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav a:hover {
+  background-color: #404144;
+  color: #b9b5b5;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
+header {
+  background-color: #b9b5b5;
+  margin: 0;
   overflow: hidden;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.logo {
+  float: left;
+  max-height: 1em;
+  margin: 1.3rem;
+}
+
+.banner {
+  display: block;
+  background-color: black;
 }
 
 .content {
   margin: auto;
   position:absolute;
   display: block;
-  padding: 15px, 15px, 0 25px;
+  padding-top: 35rem;
   width: 100%;
   top: 50%;
   left: 50%;
@@ -99,14 +121,19 @@ a {
   transform: translate(-45%, -66%);
 }
 
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
 .btn {
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: inline-block;
   text-align: center;
   text-decoration: none;
   padding: .5rem;
   border-radius: 7px;
-  color: white;
+  color: black;
   border-width: 2px;
 }
 
@@ -129,6 +156,7 @@ div {
   overflow: hidden;
   background-color: black;
   position: relative;
+  max-width: 33rem;
 }
 
 .link-card:hover img {
@@ -137,8 +165,9 @@ div {
 
 .food-icon {
   display:block;
-  max-width: 12em;
+  max-width: 16em;
   margin: auto;
+  padding-bottom: 1rem;
 }
 
 article h2 {
@@ -152,8 +181,9 @@ section p {
 
 section h2 {
   padding-left: 1rem;
-  padding-top: 1rem;
+  padding-top: 12rem;
   text-align: center;
+  text-decoration-color: black;
 }
 
 section {
@@ -173,6 +203,7 @@ section {
 
 section p {
   margin: 0;
+  text-align: center;
 }
 
 section h2 {
@@ -183,6 +214,22 @@ section h2 {
 
 div h3, p {
   text-align: center;
+}
+
+.footer-links {
+  list-style-type: none;
+  clear: both;
+  background-color: #555;
+  padding: 4px;
+  text-align: center;
+  margin-top: 2em;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  background-color: #404144;
+  color: #b9b5b5;
 }
 
 footer {
@@ -200,6 +247,7 @@ footer a {
   padding: 4px;
   text-align: center;
   background-color: #555;
+  list-style-type: none;
 }
 
 small {
@@ -275,39 +323,39 @@ small {
   }
 
   .nav {
-     display: block;
-     background-color: #555;
-     text-align: center;
-   }
-
-   .nav-label {
-     display: none;
-   }
-
-   .nav a {
-     padding-left: 2rem;
-     padding-right: 2rem;
+    display: block;
     background-color: #555;
-   }
+    text-align: center;
+  }
 
-   .nav li {
-     display: inline-block;
-   }
+  .nav-label {
+    display: none;
+  }
 
-   .nav a {
-     background-color: #555;
-     padding-left: 2rem;
-     padding-right: 2rem;
-   }
+  .nav a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #555;
+  }
 
-   .nav a:hover {
-     background-color: black;
-     color: white;
-   }
+  .nav li {
+    display: inline-block;
+  }
 
- }
+  .nav a {
+    background-color: #555;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
- @media only screen and (min-width: 90em) {
+  .nav a:hover {
+    background-color: black;
+    color: white;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
