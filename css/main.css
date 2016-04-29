@@ -104,4 +104,34 @@ a {
   padding: .5rem;
   border-radius: 7px;
   color: white;
+  border-width: 2px;
+}
+
+.banner h2 p {
+  text-align: center;
+}
+
+.link-card {
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+div {
+  text-align: center;
+  padding: .5rem;
+}
+
+.link-card .img-flex {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+}
+
+.link-card:hover img {
+  opacity: .7;
+}
+
+.food-icon {
+  display:inline-block;
 }
