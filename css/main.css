@@ -27,7 +27,52 @@ h1 {
   margin-bottom: 1rem;
 }
 
-nav ol {
+.nav {
+  display: none;
+}
+
+.nav a:hover {
+  background-color: white;
+  color: white;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-check {
+  display: none;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-label {
+  cursor: pointer;
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+nav ul {
   list-style-type: none;
   padding-left: 0;
   text-align: right;
@@ -46,6 +91,14 @@ nav a {
 
 .nav {
   display: none;
+  list-style-type: none;
+  clear: both;
+  background-color: #555;
+  padding: 4px;
+  text-align: center;
+  margin-top: 2em;
+  padding: 1rem;
+  text-decoration: none;
 }
 
 .nav-check {
@@ -63,29 +116,6 @@ nav a {
   cursor: pointer;
   width: 40px;
   display: inline-block;
-}
-
-.nav-open,
-.nav-close {
-  display: block;
-  width: 100%;
-}
-
-.nav-close {
-  display: none;
-}
-
-.nav a:hover {
-  background-color: #404144;
-  color: #b9b5b5;
-}
-
-.nav-check:checked ~ .nav-label .nav-open {
-  display: none;
-}
-
-.nav-check:checked ~ .nav-label .nav-close {
-  display: block;
 }
 
 header {
